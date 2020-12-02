@@ -11,8 +11,9 @@ import './App.css';
 // import DemoApp from './BOOTSTRAP TABLE DEMO/Demo1';
 // import Demo1 from './TAbleDemo/Demo1';
 // import LineChart from './chart/LineChart';
-// import BarChart from './chart/BarChart';
+import BarChart from './chart/BarChart';
 import DoughnutChart from './chart/DoughnutChart';
+import PieChart from './chart/PieChart';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       <div className='chart'>
         {/* <LineChart /> */}
         {/* <BarChart/> */}
-        <DoughnutChart/>
+        {/* <DoughnutChart/> */}
+        <PieChart/>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
 const BarChart = () => {
-    
+
     const data = {
         labels: [
             'Jan',
@@ -29,6 +29,8 @@ const BarChart = () => {
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                 ],
+                borderWidth: 5
+
             },
             {
                 label: 'Sales 2019 (M)',
@@ -71,8 +73,12 @@ const BarChart = () => {
 
     return (
         <Bar
+            // height={400}
+            // width={600}
             data={data}
             options={options}
+        //options={{ maintainAspectRatio: false }} //for manage scroll bar
+
         />
     )
 }

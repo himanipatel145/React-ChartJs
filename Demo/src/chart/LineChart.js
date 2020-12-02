@@ -1,6 +1,5 @@
-
-import React from 'react'
-import { Line } from 'react-chartjs-2'
+import React from 'react';
+import { Line } from 'react-chartjs-2';
 
 const LineChart = () => {
   const data = {
@@ -14,7 +13,7 @@ const LineChart = () => {
     datasets: [
       {
         label: 'Sales 2020 (M)',
-        data: [3, 2, 2, 1, 5],
+        data: [13, 12, 12, 11, 15],
         borderColor: ['rgba(255, 206, 86, 0.2)'],
         backgroundColor: ['rgba(255, 206, 86, 0.2)'],
         pointBackgroundColor: 'rgba(255, 206, 86, 0.2)',
@@ -41,7 +40,7 @@ const LineChart = () => {
         {
           ticks: {
             min: 0,
-            max: 6,
+            max: 15,
             stepSize: 1
           }
         }
@@ -49,7 +48,12 @@ const LineChart = () => {
     }
   }
 
-  return <Line data={data} options={options} />
+  return (
+    <Line
+      data={data}
+      options={options}
+    />
+  )
 }
 
-export default LineChart
+export default LineChart;
